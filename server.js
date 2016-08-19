@@ -107,7 +107,7 @@ var SampleApp = function() {
         };
 
         self.routes['/mysqldbhost'] = function(req, res) {
-            var ip = process.env.OPENSHIFT_MYSQLDB_DB_HOST;
+            var ip = process.env.$OPENSHIFT_MYSQLDB_DB_HOST;
             res.send("<html><body>" + ip + "</body></html>");
         }
     };
