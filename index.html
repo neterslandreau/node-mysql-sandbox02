@@ -205,14 +205,14 @@ line-height: 1.4;
 
 </head>
 <body>
+<button onclick="myFunction()">try it</button>
 <script type="javascript">
-function myFunction() {
+var myFunction = function() {
 	var ip = OPENSHIFT_MYSQLDB_DB_HOST;
 	alert("ip: "+ip)
 
 }
 </script>
-<button onclick="myFunction()">try it</button>
 <section class='container'>
           <hgroup>
             <h1>Welcome to your Node.js application on OpenShift</h1>
